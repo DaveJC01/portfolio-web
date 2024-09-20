@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.containerNav {
+    width: 80%;
+    height: 55px;
+    box-shadow: 0px 1px 5px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+}
+
+.imgMarca {
+    width: 50px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titleNav {
+    margin: 0;
+    color: #1e90ff;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.1),
+        2px 2px 4px rgba(245, 241, 241, 0.2),
+        3px 3px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.navegation {
+
+    display: flex;
+    gap: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 5px;
+    background: linear-gradient(to right, transparent 50%, #1e8fff81 50%);
+    background-size: 200% 100%;
+    transition: background-position 1s, color 2s;
+}
+
+li:hover {
+    background-position: -100% 0;
+    /* Mueve el gradiente para mostrar el color de fondo */
+    color: white;
+    /* Cambia el color del texto al hacer hover */
+    border-radius: 5px;
+}
+
+
+ul,
+li,
+a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    margin-left: 95px;
+    margin-right: 95px;
+
+}
+
+.container-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+
+}
+
+.name {
+    margin: 0;
+    font-size: 2cap;
+    color: black;
+}
+
+.pref {
+    font-size: 3cap;
+    color: dodgerblue;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.1),
+        2px 2px 4px rgba(245, 241, 241, 0.2),
+        3px 3px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.ocupation {
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+.btnCV {
+    width: 20%;
+    background: linear-gradient(to right, transparent 50%, #1e90ff 50%);
+    background-size: 200% 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border: 1px solid #1e90ff;
+    color: #1e90ff;
+    transition: background-position 1s, color 2s;
+    /* Añadido background-position a la transición */
+}
+
+.btnCV:hover {
+    cursor: pointer;
+    background-position: -100% 0;
+    /* Mueve el gradiente para mostrar el color de fondo */
+    color: white;
+
+}
+
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPerfil {
+    width: 100%;
+
+}
+
+
+.circle {
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    border: 1px;
+    border-radius: 100%;
+    box-shadow:
+        1px 4px 3px rgba(30, 144, 255, 0.5),
+        1px 4px 5px rgba(30, 144, 255, 0.4),
+        1px 7px 7px rgba(30, 144, 255, 0.3),
+        1px 7px 10px rgba(30, 144, 255, 0.2);
+}
+
+
+/* Mancha en toda la pantalla */
+
+.background-shape {
+    position: absolute;
+    left: 55%;
+    top: 0;
+    z-index: -10;
+    transform: translateX(-50%);
+    filter: blur(3rem);
+}
+
+.background-shape.xl\\ {
+    top: -1.5rem;
+    /* Ajuste para pantallas XL */
+}
+
+.inner-shape {
+    aspect-ratio: 1155 / 679;
+    width: 72.1875rem;
+    background: linear-gradient(to top right, #F4E9DC, #1e90ff);
+    opacity: 0.3;
+    clip-path: polygon(84.1% 50.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 77.8%, 76.1% 97.7%, 74.1% 44.1%);
+}
+
+.resumen {
+    width: 70%;
+    line-height: 3dvb;
+
+}
+
+
+
+@media (max-width: 800px) {
+    .nav {
+        display: flex;
+        justify-content: normal;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .containerNav {
+       width: 90%;
+    }
+
+    .navegation {
+        font-size: 12px;
+        gap: 10px;
+    }
+    
+    .container { 
+        margin: 0;
+    }
+
+    .container-body {
+        flex-direction: column-reverse;
+    }
+
+    .container-info {
+        justify-content: normal;  
+    }
+
+    .pref {
+        font-size: 2cap;
+    }
+
+    .resumen {
+        width: 90%;
+    }
+
+    .btnCV {
+        width: 40%;
+    }
+    
+    .circle {
+        width: 250px;
+        height: 250px;
+    }
+ 
+.background-shape {
+   display: none;
+}
+
+
+    
+
+}
