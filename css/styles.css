@@ -298,6 +298,10 @@ a {
         width: 90%;
     }
 
+    .titleNav {
+        display: none;
+    }
+
     .navegation {
         font-size: 12px;
         gap: 5px;
