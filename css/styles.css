@@ -284,6 +284,29 @@ a {
     width: 100%;
 }
 
+.table-habilidades {
+    padding: 0;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+    list-style: none;
+}
+
+.item-habilidades {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    border: 1px solid rgba(121, 121, 121, 0.562);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    width: 100px;
+}
+
+.icon {
+    width: 70px;
+}
+
 
 @media (max-width: 800px) {
     .nav {
@@ -349,6 +372,11 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .table-habilidades {
+        justify-content: space-around;
+        gap: 20px;
     }
 
 
