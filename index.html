@@ -15,9 +15,9 @@
             <h1 class="titleNav">JCD</h1>
             <div>
                 <ul class="navegation">
-                    <li class="nav-link"><a href="#">Inicio</a></li>
-                    <li class="nav-link"><a href="#">Sobre mi</a></li>
-                    <li class="nav-link"><a href="#">Proyectos</a></li>
+                    <li class="nav-link"><a href="#home">Inicio</a></li>
+                    <li class="nav-link"><a href="#aboutMe">Sobre mi</a></li>
+                    <li class="nav-link"><a href="#project">Proyectos</a></li>
                     <li class="nav-link"><a href="#">Contactos</a></li>
                 </ul>
             </div>
@@ -25,7 +25,9 @@
     </nav>
 
     <main class="container">
-        <article class="container-body">
+
+        <!-- Informacion dobre mi y lo que hago -->
+        <article class="container-body" id="home">
             <div class="container-info">
                 <h1 class="name">Hola, mi nombre es <br>
                     <span class="pref">Jean Carlos David.</span>
@@ -39,7 +41,6 @@
                     <button class="btnProject">Proyectos</button>
                     <button class="btnCV">Descargar CV</button>
                 </div>
-
             </div>
 
             <div class="container-image">
@@ -56,7 +57,7 @@
 
         </article>
         <!-- Seccion que habla sobre mi  -->
-        <article class="container-about">
+        <article class="container-about" id="aboutMe">
             <div>
                 <h1 class="title-about">Sobre mi</h1>
             </div>
@@ -121,18 +122,18 @@
             </div>
         </article>
 
-        <article class="container-project">
+        <article class="container-project" id="project">
             <div>
                 <h1 class="title-project">Mis Proyectos</h1>
             </div>
             <div class="content-project">
                 <ul class="container-list-project">
-                    <li class="list-project"> 
+                    <li class="list-project">
                         <div class="youtube" id="openModal">
                             <div class="img-project">
-                             <span class="text-project"> YouTube</span>   
+                                <span class="text-project"> YouTube</span>
                             </div>
-                             
+
                         </div>
                     </li>
 
@@ -143,23 +144,24 @@
 
 
         <!-- Botón para abrir la ventana modal -->
-        
+
 
         <!-- Estructura de la ventana modal -->
         <div id="myModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <button id="close" class="close">&times;</button>
                 <h2>YouTube</h2>
                 <img class="img-modal" src="./Img/youtube.png" alt="">
-                <p>Este proyecto se basa en la recreacion del front end de la primera version de youtube llamada "Me at the zoo".</p>
+                <p>Este proyecto se basa en la recreacion del front end de la primera version de youtube llamada "Me at
+                    the zoo".</p>
 
                 <div class="modla-footer">
-                <button id="cerrarModal" class="btnCerrar ">Cerrar</button>
-                <button class="btnCodigo">Ver codigo</button>
-                <button class="btnVer">Ver</button>
+                    <button id="cerrarModal" class="btnCerrar ">Cerrar</button>
+                    <button class="btnCodigo">Ver codigo</button>
+                    <button class="btnVer">Ver</button>
                 </div>
             </div>
-            
+
         </div>
 
 
