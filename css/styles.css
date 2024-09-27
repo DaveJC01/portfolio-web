@@ -307,6 +307,154 @@ a {
     width: 70px;
 }
 
+.container-project {
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.title-project {
+    padding-top: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none; /* Oculta la ventana por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+/* Contenido de la ventana modal */
+.modal-content {
+    background-color: #fff;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+/* Botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container-list-project{
+    padding: 0;
+}
+
+
+.modla-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.list-project {
+    list-style: none;
+    border-radius: 15px;
+}
+
+.img-project {
+    border-image: fill 0 linear-gradient(#0001, #000);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.text-project {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.img-modal {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.youtube {
+   position: relative;
+    width: 300px;
+    height: 200px;
+    background-image: url('../Img/youtube.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+  
+  
+}
+
+.btnCerrar, .btnCodigo, .btnVer {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: #1e8fffdc;
+    color: white;
+    cursor: pointer;
+}
+
+.btnCerrar:hover {
+    background: rgba(255, 0, 0, 0.863);
+}
+
+.btnCodigo:hover {
+    background: #888;
+}
+.btnVer:hover {
+    background: green;
+}
+
+
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 
 @media (max-width: 800px) {
     .nav {
@@ -327,7 +475,7 @@ a {
 
     .navegation {
         font-size: 12px;
-        gap: 5px;
+        gap: 20px;
     }
 
     .container {
@@ -379,6 +527,12 @@ a {
         gap: 20px;
     }
 
+    .list-project {
+        display: flex;
+        justify-content: center;
+    }
+
+   
 
 
 

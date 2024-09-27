@@ -100,16 +100,19 @@
                 </div>
                 <div>
                     <ul class="table-habilidades">
-                        <li class="item-habilidades"><img class="icon" src="./Img/html.svg" alt="Icon Html">HTML</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/css.svg" alt="Icon Css">CSS</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/js.svg" alt="Icon js">JAVASCRIPT</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/typescript.svg"
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/html.svg" alt="Icon Html">HTML
+                        </li>
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/css.svg" alt="Icon Css">CSS</li>
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/js.svg" alt="Icon js">JAVASCRIPT
+                        </li>
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/typescript.svg"
                                 alt="Icon ts">TYPESCRIPT</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/php.svg" alt="Icon php">PHP</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/react.svg" alt="Icon react">REACT</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/bootstrap.svg"
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/php.svg" alt="Icon php">PHP</li>
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/react.svg" alt="Icon react">REACT
+                        </li>
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/bootstrap.svg"
                                 alt="Icon bootstrap">BOOTSTRAP</li>
-                        <li class="item-habilidades"><img class="icon" src="./Img/tailwindcss-dark.svg"
+                        <li class="item-habilidades"><img class="icon" src="./Img/icon/tailwindcss-dark.svg"
                                 alt="Icon tailwind">TAILWIND</li>
                     </ul>
                 </div>
@@ -118,14 +121,53 @@
             </div>
         </article>
 
+        <article class="container-project">
+            <div>
+                <h1 class="title-project">Mis Proyectos</h1>
+            </div>
+            <div class="content-project">
+                <ul class="container-list-project">
+                    <li class="list-project"> 
+                        <div class="youtube" id="openModal">
+                            <div class="img-project">
+                             <span class="text-project"> YouTube</span>   
+                            </div>
+                             
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </article>
+
+
+        <!-- Botón para abrir la ventana modal -->
         
+
+        <!-- Estructura de la ventana modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>YouTube</h2>
+                <img class="img-modal" src="./Img/youtube.png" alt="">
+                <p>Este proyecto se basa en la recreacion del front end de la primera version de youtube llamada "Me at the zoo".</p>
+
+                <div class="modla-footer">
+                <button id="cerrarModal" class="btnCerrar ">Cerrar</button>
+                <button class="btnCodigo">Ver codigo</button>
+                <button class="btnVer">Ver</button>
+                </div>
+            </div>
+            
+        </div>
 
 
 
 
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
