@@ -13,37 +13,43 @@
 <body>
     
 <nav class="navbar container-md rounded-4 border mt-md-3 mt-sm-3 navbar-expand-md fixed-top flex-row bg-white shadow-sm">
-   
     <div class="container-fluid">
         <a class="titleNav text-decoration-none fs-4 fw-bold" href="#">JCD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <ul class="navbar-nav mb-2 mb-md-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#aboutMe">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#project"> Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#info"> Contacto</a>
-              </li>
-          </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbarDark">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">Sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#project"> Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#info"> Contacto</a>
+                  </li>
+            
+                </ul>
         </div>
       </div>
   </nav>
 
-    <main class="container p-0 mt-5 mt-md-0">
+    <main class="container d-flex justify-content-center p-0">
 
         <!-- Informacion dobre mi y lo que hago -->
-        <article class="container d-flex flex-column-reverse flex-lg-row   gap-5 p-0 justify-content-center vh-100" id="home">
-            <div class="container-info">
-                <h1 class="name" >Hola, mi nombre es <br>
+        <article class="container row d-flex flex-column-reverse flex-lg-row gap-md-5 p-0 justify-content-center vh-100" id="home">
+            <div class="col container-info d-flex justify-content-center flex-column p-0">
+                <h1 class="name" >Hola, mi nombre es</h1>
+                <h1 class="m-0">
                     <span class="pref fw-semibold fs-1">Jean Carlos David</span>
                 </h1>
                 <h2 class="fw-bolder fs-3">Desarrollador front-end </h2>
@@ -58,17 +64,17 @@
                 </div>
             </div>
 
-            <div class="container-image">
-                <span class="circle">
-                    <img class="imgPerfil" src="./Img/perfil.png" alt="Perfil">
+            <div class="col container-img d-flex justify-content-end align-items-center p-0">
+                <span class="circle d-flex justify-content-center align-items-center  ">
+                     <img class="imgPerfil" src="./Img/perfil.png" alt="Perfil"> 
                 </span>
 
             </div>
 
             <!-- fondo con la mancha -->
-            <div class="background-shape  d-none d-md-block">
+            <!-- <div class="background-shape  d-none d-md-block">
                 <div class="inner-shape"></div>
-            </div>
+            </div> -->
 
         </article>
         <!-- Seccion que habla sobre mi  -->
