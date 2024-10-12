@@ -14,7 +14,7 @@
 <body>
 
     <nav
-        class="navbar container-md rounded-4 border mt-md-3 mt-sm-3 navbar-expand-md fixed-top flex-row bg-white shadow-sm">
+        class="navbar container-md rounded-4 border mt-md-2 mt-sm-3 navbar-expand-md fixed-top flex-row bg-white shadow-sm">
         <div class="container-fluid">
             <a class="titleNav text-decoration-none fs-4 fw-bold" href="#">JCD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -63,9 +63,11 @@
                     “Paso a paso se construyen las grandes
                     edificaciones.”
                 </p>
-                <div class="container-button">
-                    <button class="btnCV">Descargar CV</button>
-                    <button class="btnProject">GitHub </button>
+                <div class="">
+                    <button class="btn btn-outline-primary me-1">Descargar CV</button>
+                    <a href="https://github.com/DaveJC01"> <img class="git m-1" src="./Img/icon/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/jean-carlos-david-rivas/"> <img class="git"
+                            src="./Img/icon/linkedin.svg" alt=""></a>
                 </div>
             </div>
 
@@ -83,23 +85,21 @@
 
         </article>
         <!-- Seccion que habla sobre mi  -->
-        <article class="container vh-100 mt-0 mt-md-5 pt-md-5" id="aboutMe">
+        <article class="container  mt-0 mt-md-5 pt-md-5" id="aboutMe">
             <div>
-                <h1 class="mt-md-5">Sobre mi</h1>
+                <h1 class="mt-md-4">Sobre mi</h1>
             </div>
             <div class="border rounded d-flex flex-column p-3 flex-md-row">
                 <div class="d-flex justify-content-center ">
                     <span class="perfil2 d-flex justify-content-center">
-                        <img class="w-100" src="./Img/perfil2.jpg" alt="About">
+                        <img class="img2 rounded-4 p-2" src="./Img/perfil2.jpg" alt="About">
                     </span>
                 </div>
 
-                <div class="p-3">
+                <div class="sobreMi p-3 d-flex flex-column justify-content-center">
                     <p class="text">
-                        Mi nombre es Jean Carlos David Rivas Raga, soy de Cali Colombia, cuento con un titulo en
-                        Análisis y Desarrollo de software, me especializo en lo que es el desarrollo web y me
-                        destaco
-                        en el area del Front-End.
+                        Mi nombre es Jean Carlos David Rivas Raga, soy de Cali Colombia, soy
+                        Análista y Desarrollador de software, me especializo en area de desarrollo web.
 
                     </p>
 
@@ -120,30 +120,43 @@
 
 
             <div class="container ">
-                <div class="pt-3 pb-3">
-                    <h1>Hablildades</h1>
+                <div class="pt-2">
+                    <h1 class="h2">Hablildades</h1>
                 </div>
                 <div>
-                    <ul class="d-flex flex-wrap  list-unstyled jus justify-content-between ">
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/html.svg"
-                                alt="Icon Html">HTML
+                    <ul class="d-flex flex-wrap  list-unstyled gap-2 justify-content-between habilidad">
+                        <li class="iconHabilidad d-flex border rounded-3 p-2 flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/html.svg" alt="Icon Html">
+                            <span class="">HTML</span>
                         </li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/css.svg"
-                                alt="Icon Css">CSS</li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/js.svg"
-                                alt="Icon js">JAVASCRIPT
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/css.svg" alt="Icon Css">
+                            <span class="">CSS</span>
                         </li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/typescript.svg"
-                                alt="Icon ts">TYPESCRIPT</li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/php.svg"
-                                alt="Icon php">PHP</li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/react.svg"
-                                alt="Icon react">REACT
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/js.svg" alt="Icon js">
+                            <span></span>JS
                         </li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/bootstrap.svg"
-                                alt="Icon bootstrap">BOOTSTRAP</li>
-                        <li class="d-flex flex-column align-items-center"><img class="icon" src="./Img/icon/tailwindcss-dark.svg"
-                                alt="Icon tailwind">TAILWIND</li>
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/typescript.svg" alt="Icon ts">
+                            TS
+                        </li>
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/php.svg" alt="Icon php">
+                            PHP
+                        </li>
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/react.svg" alt="Icon react">
+                            REACT
+                        </li>
+                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/bootstrap.svg" alt="Icon bootstrap">
+                            BS
+                        </li>
+                        <li class="iconHabilidad border rounded-3 flex-column align-items-center">
+                            <img class="icon" src="./Img/icon/tailwindcss-dark.svg" alt="Icon tailwind">
+                            TW
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -151,52 +164,46 @@
             </div>
         </article>
 
-        <!-- <article class="container-project" id="project">
-            <div>
-                <h1 class="title-project">Mis Proyectos</h1>
+    <article class=" container vh-100 mt-5 pt-5 " id="project">
+              <div>
+                <h1 class="mt-4">Mis Proyectos</h1>
             </div>
-            <div class="content-project">
-                <ul class="container-list-project">
+            <div class="">
+                <ul class="list-unstyled">
                     <li class="list-project">
-                        <div class="youtube" id="openModal">
+                        <div class="youtube"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div class="img-project">
                                 <span class="text-project"> YouTube</span>
                             </div>
 
                         </div>
                     </li>
-
                 </ul>
 
-            </div>
-        </article> -->
 
+            </div> 
 
-        <!-- Botón para abrir la ventana modal -->
+             
+        </article> 
 
-
-        <!-- Estructura de la ventana modal -->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <button id="close" class="close">&times;</button>
-                <h2>YouTube</h2>
-                <img class="img-modal" src="./Img/youtube.png" alt="">
-                <p>Este proyecto se basa en la recreacion del front end de la primera version de youtube llamada "Me at
-                    the zoo".</p>
-
-                <div class="modla-footer">
-                    <button id="cerrarModal" class="btnCerrar ">Cerrar</button>
-                    <button class="btnCodigo">Ver codigo</button>
-                    <button class="btnVer">Ver</button>
-                </div>
-            </div>
-
+ <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Youtube</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-
-
-
-
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Visitar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
