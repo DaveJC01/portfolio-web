@@ -179,6 +179,10 @@ html {
   
 }
 
+.btnContact {
+    width: 30px;
+}
+
 
 
 
@@ -229,6 +233,10 @@ html {
 
     .habilidad {
         justify-content:unset !important;
+    }
+
+    .contact {
+        width: 100% !important;
     }
   }
 
