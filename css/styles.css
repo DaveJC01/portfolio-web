@@ -2,12 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-
+ 
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .titleNav {
     margin: 0;
@@ -30,11 +28,13 @@ html {
 
 }
 
-.name {
-    margin: 0;
-    font-size: 2cap;
-    color: black;
+.nav:hover {
+    transition: all 0.5s;
+    background: #00000085;
+    border-radius: 8px;
 }
+
+
 
 .pref {
     color: dodgerblue;
@@ -101,11 +101,44 @@ html {
     height: 350px;
     border: 1px;
     border-radius: 100%;
-    box-shadow:
+    z-index: 3;
+    /* box-shadow:
         1px 4px 3px rgba(30, 144, 255, 0.5),
         1px 4px 5px rgba(30, 144, 255, 0.4),
         1px 7px 7px rgba(30, 144, 255, 0.3),
-        1px 7px 10px rgba(30, 144, 255, 0.2);
+        1px 7px 10px rgba(30, 144, 255, 0.2); */
+}
+
+.adornos {
+    width: 40%;
+    height: 600px;
+} 
+
+.html_img {
+    top: 100px;
+    left: 20px;
+}
+
+.phthon_img {
+    top: 405px;
+    right: 40px;
+}
+
+.css_img {
+    left: 140px;
+    top: 180px;
+}
+
+.react_img {
+    bottom: -260px ;
+    left: 395px;
+}
+
+
+.fondo_img {
+    top: -250px;
+    left: 20px;
+    z-index: -98;
 }
 
 
@@ -133,14 +166,13 @@ html {
     clip-path: polygon(84.1% 50.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 77.8%, 76.1% 97.7%, 74.1% 44.1%);
 }
 
-.resumen {
-    width: 70%;
-    line-height: 3dvb;
+.navbar {
+    backdrop-filter: blur(2px);
 }
 
 .perfil2 {
-    width: 220px;
-    height: 280px; 
+    width: 180px;
+    height: 240px; 
 }
 
 .img2 {
@@ -198,6 +230,7 @@ html {
 @media (max-width: 800px) {
     .navbar {
       border-radius: 0 !important;
+      justify-content: end !important;
     }
     .circle {
         width: 300px;
@@ -238,6 +271,47 @@ html {
     .contact {
         width: 100% !important;
     }
+
+    .fondo_img {
+        width: 430px;
+        top: -525px;
+        left: -135px;
+    }
+
+    .html_img {
+        top: 95px;
+        left: -100px;
+    }
+
+    .js_img {
+        bottom: 312px;
+        left: 150px;
+
+    }
+
+    .phthon_img {
+        top: 269px;
+        right: 140px;
+    }
+
+    .css_img {
+        left: 166px;
+        top: 115px;
+    }
+
+    .react_img {
+        bottom: 55px;
+        left: 49px;
+    }
+
+    .btn-toggle {
+        justify-content: flex-end !important;
+    }
+    
+    .navbar{
+        backdrop-filter: none;
+    }
+    
   }
 
 
