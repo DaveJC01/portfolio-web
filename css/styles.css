@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
- 
+
 }
 
 
@@ -83,7 +83,7 @@ body {
 }
 
 .iconHabilidad {
-    width: 110px;
+
     display: flex !important;
     justify-content: center !important;
 
@@ -91,8 +91,8 @@ body {
 
 .imgPerfil {
     width: 100%;
-    
-} 
+
+}
 
 
 .circle {
@@ -112,7 +112,7 @@ body {
 .adornos {
     width: 40%;
     height: 600px;
-} 
+}
 
 .html_img {
     top: 100px;
@@ -130,7 +130,7 @@ body {
 }
 
 .react_img {
-    bottom: -260px ;
+    bottom: -260px;
     left: 395px;
 }
 
@@ -166,20 +166,38 @@ body {
     clip-path: polygon(84.1% 50.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 77.8%, 76.1% 97.7%, 74.1% 44.1%);
 }
 
-.navbar {
-    backdrop-filter: blur(2px);
-}
+
 
 .perfil2 {
     width: 180px;
-    height: 240px; 
+    height: 240px;
 }
 
 .img2 {
     width: 100%;
 }
-.icon{
-    width: 70px !important; 
+
+.icon {
+    width: 70px !important;
+}
+
+.background-image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.sombra {
+    border-image: fill 0 linear-gradient(#0001, #000);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .img-project {
@@ -190,6 +208,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: end;
+
 }
 
 .text-project {
@@ -198,7 +217,7 @@ body {
 }
 
 .youtube {
-   position: relative;
+    position: relative;
     width: 300px;
     height: 200px;
     background-image: url('../Img/youtube.png');
@@ -207,8 +226,8 @@ body {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-  
-  
+
+
 }
 
 .btnContact {
@@ -220,8 +239,13 @@ body {
 
 /* Animación de aparición */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -229,9 +253,10 @@ body {
 /*pantallas pequeñas */
 @media (max-width: 800px) {
     .navbar {
-      border-radius: 0 !important;
-      justify-content: end !important;
+        border-radius: 0 !important;
+        justify-content: end !important;
     }
+
     .circle {
         width: 300px;
         height: 300px;
@@ -265,7 +290,7 @@ body {
     }
 
     .habilidad {
-        justify-content:unset !important;
+        justify-content: unset !important;
     }
 
     .contact {
@@ -304,15 +329,6 @@ body {
         left: 49px;
     }
 
-    .btn-toggle {
-        justify-content: flex-end !important;
-    }
-    
-    .navbar{
-        backdrop-filter: none;
-    }
-    
-  }
 
 
-  
+}
