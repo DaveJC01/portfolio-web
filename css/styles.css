@@ -329,6 +329,12 @@ body {
         left: 49px;
     }
 
+  
+
+    .movil {
+        justify-content: flex-end !important;
+    }
+
 
 
 }
