@@ -16,12 +16,12 @@
 
     <style>
         .html {
-            background-image: url('../Img/icon/html.svg');
+            background-image: url('./Img/icon/html.svg');
         }
     </style>
 </head>
 
-<body class="">
+<body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -82,27 +82,27 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" id="offcanvasNavbarDark">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title " id="offcanvasNavbarDarkLabel">Menu</h5>
+                <div class="offcanvas-header bg-dark ">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarDarkLabel">Menu</h5>
                     <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body overflow-visible  ">
+                <div class="offcanvas-body bg-dark overflow-visible  ">
                     <ul class="navbar-nav  gap-3  ">
                         <li class="nav-item nav">
-                            <a class="nav-link text-secondary-emphasis" href="#home">Inicio</a>
+                            <a class="nav-link text-white" href="#home">Inicio</a>
                         </li>
                         <li class="nav-item nav">
-                            <a class="nav-link text-secondary-emphasis" href="#aboutMe">Sobre mi</a>
+                            <a class="nav-link text-white" href="#aboutMe">Sobre mi</a>
                         </li>
                         <li class="nav-item nav">
-                            <a class="nav-link text-secondary-emphasis" href="#project"> Proyectos</a>
+                            <a class="nav-link text-white" href="#project"> Proyectos</a>
                         </li>
                         <li class="nav-item nav">
-                            <a class="nav-link text-secondary-emphasis" href="#contacto"> Contacto</a>
+                            <a class="nav-link text-white" href="#contacto"> Contacto</a>
                         </li>
-                        <li class="nav-item nav">
-                            <a href="#" class="nav-link text-secondary-emphasis" data-bs-toggle="modal"
+                        <li class="nav-item nav d-none d-md-block">
+                            <a href="#" class="nav-link text-white" data-bs-toggle="modal"
                                 data-bs-target="#alertModal">Iniciar sesion</a>
                         </li>
                     </ul>
@@ -294,6 +294,7 @@
         </article>
 
 
+
         <!-- Modal de Alerta -->
         <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -325,20 +326,23 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body border-0 ">
-                        <form class="">
+                        <form class="needs-validation" novalidate>
                             <div class="form-floating float mb-3">
                                 <input type="text" class="form-control rounded-3" id="floatingInputValue"
-                                    placeholder="username">
+                                    placeholder="username" required>
                                 <label for="floatingInputValue" class="">Usuario</label>
+                                <div class="valid-feedback">
+                                  </div>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control rounded-3"
-                                    id="floatingPassword" placeholder="Password">
+                                    id="floatingPassword" placeholder="Password" required>
                                 <label for="floatingPassword " class="">Password</label>
+                                <div class="valid-feedback"></div>
                             </div>
                             <div class="d-flex justify-content-end gap-2">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button class=" btn rounded-3 btn-primary" type="submit">Sign In</button>
+                                <button id="btnIniciarSesion" class=" btn rounded-3 btn-primary" type="submit">Iniciar sesion</button>
 
                             </div>
 
