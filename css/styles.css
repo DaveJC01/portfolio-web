@@ -185,7 +185,7 @@ body {
     position: relative;
     height: 100px;
     width: 100px;
-    border-radius: 20%;
+    border-radius: 25%;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -208,6 +208,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: end;
+    z-index: 99;
 
 }
 
@@ -218,16 +219,18 @@ body {
 
 .youtube {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     background-image: url('../Img/youtube.png');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+}
 
-
+.project {
+    justify-content: center !important;
 }
 
 .btnContact {
@@ -328,8 +331,6 @@ body {
         bottom: 55px;
         left: 40px;
     }
-
-  
 
     .movil {
         justify-content: flex-end !important;

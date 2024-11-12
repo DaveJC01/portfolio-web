@@ -18,6 +18,28 @@
         .html {
             background-image: url('./Img/icon/html.svg');
         }
+        .css {
+            background-image: url('./Img/icon/css.svg');
+        }
+
+        .js {
+            background-image: url('./Img/icon/js.svg');
+        }
+        .python {
+            background-image: url('./Img/icon/python.svg');
+        }
+        .cs {
+            background-image: url('./Img/icon/cs.svg');
+        }
+        .bs {
+            background-image: url('./Img/icon/bootstrap.svg');
+        }
+        .tw {
+            background-image: url('./Img/icon/tailwindcss-dark.svg');
+        }
+        .php {
+            background-image: url('./Img/icon/php.svg');
+        }
     </style>
 </head>
 
@@ -38,8 +60,8 @@
         </symbol>
       </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center bg-primary"
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle d-none d-md-block">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center bg-primary "
                 id="bd-theme"
                 type="button"
                 aria-expanded="false"
@@ -101,10 +123,7 @@
                         <li class="nav-item nav">
                             <a class="nav-link text-white" href="#contacto"> Contacto</a>
                         </li>
-                        <li class="nav-item nav d-none d-md-block">
-                            <a href="#" class="nav-link text-white" data-bs-toggle="modal"
-                                data-bs-target="#alertModal">Iniciar sesion</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -128,9 +147,9 @@
                 </p>
                 <div class="">
                     <button class="btn btn-primary me-1">Descargar CV</button>
-                    <!-- <a href="https://github.com/DaveJC01"> <img class="git m-1" src="./Img/icon/github.svg" alt=""></a>
+                    <a href="https://github.com/DaveJC01"> <img class="git m-1" src="./Img/icon/github.svg" alt=""></a>
                     <a href="https://www.linkedin.com/in/jean-carlos-david-rivas/"> <img class="git"
-                            src="./Img/icon/linkedin.svg" alt=""></a>-->
+                            src="./Img/icon/linkedin.svg" alt=""></a>
                 </div>
             </div>
 
@@ -146,7 +165,6 @@
                     <img class="position-relative js_img" src="./Img/svg/js3D.svg" alt="">
                     <img class="position-relative react_img" src="./Img/svg/react.svg" alt="">
                     <img class="position-relative fondo_img" src="./Img/svg/fondo.svg" alt="">
-
                 </div>
             </div>
 
@@ -172,7 +190,6 @@
                     <p class="text">
                         Mi nombre es Jean Carlos David Rivas Raga, soy
                         análista y Desarrollador de software.
-
                     </p>
 
                     <p class="text">
@@ -182,7 +199,7 @@
                     </p>
                     <p class="text">
                         No me gusta conformarme con lo que se, y lo que ya tengo, busco aprender cosas nuevas y
-                        aplicarlas en las cosas que realizo
+                        aplicarlas en las cosas que realizo.
                     </p>
                 </div>
             </div>
@@ -196,37 +213,44 @@
                     <ul class="d-flex flex-wrap  list-unstyled gap-2 justify-content-between habilidad">
                         <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
                             <div class="background-image html ">
-                                <span class="sombra ">HTML</span>
+                                <span class="sombra ">Html</span>
                             </div>
                         </li>
-                        <!-- <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/css.svg" alt="Icon Css">
-                            <span class="">CSS</span>
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image css ">
+                                <span class="sombra ">Css</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/js.svg" alt="Icon js">
-                            <span></span>JS
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image js ">
+                                <span class="sombra ">Js</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/typescript.svg" alt="Icon ts">
-                            TS
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image python ">
+                                <span class="sombra ">Py</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/php.svg" alt="Icon php">
-                            PHP
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image cs ">
+                                <span class="sombra ">C#</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/react.svg" alt="Icon react">
-                            REACT
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image php ">
+                                <span class="sombra ">Php</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 d-flex flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/bootstrap.svg" alt="Icon bootstrap">
-                            BS
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image bs ">
+                                <span class="sombra ">Bs</span>
+                            </div>
                         </li>
-                        <li class="iconHabilidad border rounded-3 flex-column align-items-center">
-                            <img class="icon" src="./Img/icon/tailwindcss-dark.svg" alt="Icon tailwind">
-                            TW
-                        </li> -->
+                        <li class="iconHabilidad d-flex rounded-4 p-2 flex-column align-items-center">
+                            <div class="background-image tw ">
+                                <span class="sombra ">Tw</span>
+                            </div>
+                        </li>     
                     </ul>
                 </div>
             </div>
@@ -234,14 +258,37 @@
             </div>
         </article>
 
-        <article class=" container vh-100 mt-5 pt-5 " id="project">
+        <article class=" container vh-100 " id="project">
             <div>
                 <h1 class="mt-4 fs-3 ">Mis Proyectos</h1>
             </div>
             <div class="">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled d-flex flex-wrap gap-4 project">
                     <li class="list-project">
-                        <div class="youtube" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="youtube">
+                            <div class="img-project">
+                                <span class="text-project"> YouTube</span>
+                            </div> 
+
+                        </div>
+                    </li>
+                    <li class="list-project">
+                        <div class="youtube">
+                            <div class="img-project">
+                                <span class="text-project"> YouTube</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-project">
+                        <div class="youtube">
+                            <div class="img-project">
+                                <span class="text-project"> YouTube</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-project">
+                        <div class="youtube">
                             <div class="img-project">
                                 <span class="text-project"> YouTube</span>
                             </div>
@@ -252,11 +299,7 @@
             </div>
         </article>
 
-
-
-
-
-        <article id="contacto" class="container vh-100 pt-5 d-flex flex-column justify-content-center">
+        <article id="contacto" class="container  d-flex flex-column ">
             <div>
                 <h1 class="fs-3 mt-4">Contactame</h1>
             </div>
@@ -292,65 +335,6 @@
             </div>
 
         </article>
-
-
-
-        <!-- Modal de Alerta -->
-        <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rounded-4 shadow ">
-                    <div class="modal-header gap-3 border-bottom-0">
-                        <span><i class="bi bi-exclamation-triangle fs-3 text-warning"></i></span>
-                        <h1 class="modal-title text-warning fs-3">Advertencia</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body py-0">
-                        <p class="fs-5">Solo el administrador tiene acceso</p>
-                    </div>
-                    <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-2 border-top-0">
-                        <button type="button" id="closeModalAlert" class="btn btn-md btn-secondary"
-                            data-bs-dismiss="modal" >Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal inicio de sesion -->
-        <div class="modal fade" id="signIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  ">
-                <div class="modal-content">
-                    <div class="modal-header border-0">
-                        <h1 class="modal-title fw-bold mb-0 fs-2" id="signInLabel">Iniciar sesion</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 ">
-                        <form class="needs-validation" novalidate>
-                            <div class="form-floating float mb-3">
-                                <input type="text" class="form-control rounded-3" id="floatingInputValue"
-                                    placeholder="username" required>
-                                <label for="floatingInputValue" class="">Usuario</label>
-                                <div class="valid-feedback">
-                                  </div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3"
-                                    id="floatingPassword" placeholder="Password" required>
-                                <label for="floatingPassword " class="">Password</label>
-                                <div class="valid-feedback"></div>
-                            </div>
-                            <div class="d-flex justify-content-end gap-2">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button id="btnIniciarSesion" class=" btn rounded-3 btn-primary" type="submit">Iniciar sesion</button>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-                </div>
-            </div>
 
             <!-- Moddal de proyectos -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
