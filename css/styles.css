@@ -251,20 +251,50 @@ body {
 
 .facebook {
     position: relative;
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    transition-delay: 6s; 
-    background-image: url('../Img/facebook.png');
+    transition: all 2s; 
+    background-image: url('../Img/icon-facebook.jpg');
 }
 
-.project {
-    justify-content: center !important;
+.calculadora {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 2s; 
+    background-image: url('../Img/pet.png');
 }
+
+.sombraProject {
+    border-image: fill 0 linear-gradient(#0001, #000);
+    width: 100%;
+    display: none;
+    transition-timing-function: ease-out;
+    transition: all 2s; 
+   
+   
+}
+
+.facebook:hover .sombraProject {
+    display: flex;
+    height: 100%;
+}
+
+.calculadora:hover .sombraProject {
+    display: flex;
+    height: 100%;
+}
+
 
 .btnContact {
     width: 30px;
@@ -273,36 +303,11 @@ body {
 
 
 
-/* Animación de aparición */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 
 
 /*pantallas pequeñas */
 @media (max-width: 800px) {
-    .navbar {
-        border-radius: 0 !important;
-        justify-content: end !important;
-    }
-
-    .circle {
-        width: 300px;
-        height: 300px;
-    }
-
-    .container-img {
-        margin-top: 50px;
-        justify-content: center !important;
-    }
-
     .container-info {
         justify-content: flex-start !important;
         padding-inline-start: 40px !important;
@@ -313,60 +318,17 @@ body {
         font-size: 17px !important;
     }
 
-    .background-shape {
-        left: 5%;
-    }
-
-    .inner-shape {
-        aspect-ratio: 1395 / 822;
-        width: 31.1875rem;
-        background: linear-gradient(to top right, #F4E9DC, #1e90ff);
-        /* opacity: 0.3; */
-        clip-path: polygon(84.1% 50.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 77.8%, 76.1% 97.7%, 74.1% 44.1%);
-    }
-
     .habilidad {
         justify-content: unset !important;
     }
 
-    .contact {
-        width: 100% !important;
-    }
-
-    .fondo_img {
-        width: 430px;
-        top: -525px;
-        left: -135px;
-    }
-
-    .html_img {
-        top: 95px;
-        left: -100px;
-    }
-
-    .js_img {
-        bottom: 312px;
-        left: 150px;
-
-    }
-
-    .phthon_img {
-        top: 269px;
-        right: 140px;
-    }
-
-    .css_img {
-        left: 166px;
-        top: 115px;
-    }
-
-    .react_img {
-        bottom: 55px;
-        left: 40px;
-    }
-
     .movil {
         justify-content: flex-end !important;
+    }
+
+    .project {
+        justify-content: center !important;
+        padding-top: 25px;
     }
 
 

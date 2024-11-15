@@ -1,4 +1,4 @@
-var botones = document.querySelectorAll('div');
+var botones = document.querySelectorAll('span');
 botones.forEach(boton => {
     boton.addEventListener("click", () => {
         openModal(boton)
@@ -13,10 +13,13 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
     });
 });
 
-function openModal(div) {
+function openModal(span) {
+   console.log(span.id);
    
-    if (div.className === 'youtube') {
+    if (span.id === 'face') {
         window.location.href = 'https://davejc01.github.io/The-facebook/'
+    } else if (span.id === 'pet') {
+        window.location.href = 'https://clinica-mascotas-psx6qqx2t-jean-carlos-davids-projects.vercel.app/'
     }
     
 
