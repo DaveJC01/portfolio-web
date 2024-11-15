@@ -95,6 +95,33 @@ body {
 }
 
 
+.html {
+    background-image: url('../Img/icon/html.svg');
+}
+.css {
+    background-image: url('../Img/icon/css.svg');
+}
+
+.js {
+    background-image: url('../Img/icon/js.svg');
+}
+.python {
+    background-image: url('../Img/icon/python.svg');
+}
+.cs {
+    background-image: url('../Img/icon/cs.svg');
+}
+.bs {
+    background-image: url('../Img/icon/bootstrap.svg');
+}
+.tw {
+    background-image: url('../Img/icon/tailwindcss-dark.svg');
+}
+.php {
+    background-image: url('../Img/icon/php.svg');
+}
+
+
 .circle {
     overflow: hidden;
     width: 350px;
@@ -200,33 +227,39 @@ body {
     align-items: flex-end;
 }
 
-.img-project {
-    border-image: fill 0 linear-gradient(#0001, #000);
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-    z-index: 99;
 
-}
 
 .text-project {
     padding: 15px;
     font-size: 18px;
 }
 
+
+
 .youtube {
     position: relative;
     width: 250px;
     height: 150px;
-    background-image: url('../Img/youtube.png');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+    transition-delay: 6s; 
+    background-image: url('../Img/youtube.png');
+}
+
+.facebook {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition-delay: 6s; 
+    background-image: url('../Img/facebook.png');
 }
 
 .project {
